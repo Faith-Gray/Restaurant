@@ -1,9 +1,15 @@
-import './styles.css'
+import _ from 'lodash';
+import './styles.css';
+import pic from './coffee.jpg';
+
 console.log("Hello, Webpack");
 
-function add() {
-    const element = document.createElement('div');
-    element.innerHTML= "I hate this";
-    return element;
+function component () {
+    const title = document.createElement('div');
+    title.innerHTML = 'FALL INTO A CUP OF COFFEE';
+
+    return title;
 }
-document.body.appendChild(add);
+
+document.body.appendChild(component());
+
