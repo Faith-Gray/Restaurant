@@ -1,18 +1,32 @@
-//import { $content, createHtmlElement } from "./index";
-import { $content } from "./index.js";
+function renderNavBar() {
+    // function createMenuItem(name) {
+    //     let li = document.createElement('li');
+    //     li.textContent = name;
+    //     return li;
+    // }
 
-export function renderNavBar() {
-    const navBarItems = ["Home", "About", "Contact Us"];
-    const list = document.createElement('ul');
-    
-    list.forEach((navBarItems) =>
-    list.appendChild(navBarItems));
+    // const navBar = document.createElement('ul');
 
-    const divd = document.createElement('div');
-    divd.style.color = "white";
-    divd.style.height = "100px";
-    divd.style.width = "50px";
+    // navBar.appendChild(createMenuItem('Home'));
+    // navBar.appendChild(createMenuItem('About'));
+    // navBar.appendChild(createMenuItem('Contact Us'));
 
-    $content.appendChild(divd());
+    const container = document.createElement('div');
 
+    const home = document.createElement('div');
+    home.setAttribute('id', 'home');
+    home.textContent='home';
+
+    container.appendChild(home);
+
+
+    navBar.style.color = "white";
+    navBar.style.height = "100px";
+    navBar.style.width = "50px";
+
+
+
+    return container;
 };
+
+export default renderNavBar;

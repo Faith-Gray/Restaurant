@@ -1,13 +1,13 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './styles.css';
-import pic from './coffee.jpg';
 import renderNavBar from './navbar.js';
-
+import renderAbout from '.about.js';
+import renderContact from './contact';
 const $content = document.getElementById("content");
 
 console.log("Hello, Webpack");
 
-function component () {
+function component() {
     const title = document.createElement('div');
     title.innerHTML = 'FALL INTO A CUP OF COFFEE';
 
@@ -17,4 +17,6 @@ function component () {
 
 document.body.appendChild(component());
 
-renderNavBar();
+document.body.appendChild(renderNavBar());
+document.body.appendChild(renderAbout());
+document.body.appendChild(renderContact());
